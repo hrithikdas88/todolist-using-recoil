@@ -1,0 +1,48 @@
+
+$primary-color: #3498db;
+$danger-color: #dc3545; 
+
+.TodoItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+  
+    &:hover {
+      background-color: #f5f5f5;
+    }
+  
+    input[type="text"] {
+      flex: 1;
+      border: none;
+      outline: none;
+      font-size: 16px;
+      padding: 5px;
+      margin-right: 10px;
+      border-radius: 3px;
+  
+      &:focus {
+        border: 1px solid $primary-color; // Use your primary color variable
+      }
+    }
+  
+    input[type="checkbox"] {
+      margin-right: 10px;
+    }
+  
+    button {
+      border: none;
+      background-color: transparent;
+      color: $danger-color; // Use your danger color variable
+      cursor: pointer;
+      font-size: 16px;
+      transition: color 0.3s ease;
+  
+      &:hover {
+        color: darken($danger-color, 10%);
+      }
+    }
+  }
